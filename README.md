@@ -155,24 +155,7 @@ The ADL association model includes current function and earlier function, with a
 
 Dementia-related cause-specific Cox models compare current scores with history/deviation components. ELSA and SHARE are fitted separately; SHARE models are stratified by country. The entry assessment must explicitly record no dementia. The first subsequent positive report defines detection. Death takes priority when death and detection share a date. The primary analysis retains known deaths within valid dynamic intervals, including deaths after the last dementia assessment. The strict-observation sensitivity additionally caps follow-up at the last valid outcome assessment. Cognition-adjusted and interview-source sensitivities remain included.
 
-## Manuscript result map
 
-Paths in this table are relative to `results/`. `pipeline/` contains the longitudinal outputs. The scripts save numerical analysis results and required intermediate datasets. The map below links those results to the manuscript. Figure drawing and publication-table formatting are excluded.
-
-| Manuscript location | Analysis scripts | Main output files |
-| --- | --- | --- |
-| Fig. 1; Table 1; Supplementary Tables S2–S10; Supplementary Figs. 1–4 | `Track_A/01`–`05` | `pipeline/analysis_ready_core/longitudinal_models_v1/`, `meta_analysis_v1/`, `meta_analysis_closure_v1/` |
-| Supplementary Tables S11–S14; Supplementary Figs. 5–6 | `Longitudinal_robustness/01`, `02`, `04` | `pipeline/robustness_analysis/00_freeze_audit/`, `01_longitudinal_robustness/`, `03_lagged_fallback_sample_reconciliation/` |
-| Fig. 1C–D; Supplementary Tables S15–S16; Supplementary Figs. 7–8 | `Longitudinal_robustness/05` | `within_between_effects.csv`, `within_between_meta_summary.csv`, `between_minus_within_contrasts.csv` under `pipeline/robustness_analysis/04_within_between_manuscript_freeze/` |
-| Fig. 2; Supplementary Tables S17–S26; Supplementary Figs. 9–12 | `Mortality/01`, `02` | `mortality_bridge/candidate/`, `mortality_bridge/models/` |
-| Table 2A; Supplementary Tables S27–S30; Supplementary Fig. 13 | `Mortality_prediction/01`, `02` | `mortality_prediction/landmark/`, `mortality_prediction/models/` |
-| Fig. 3A; Table 2B; Supplementary Tables S31–S33 | `Mortality_prediction/04` | `clinical_risk_prior1_continuous/prior1_event_audit.csv`, `prior1_continuous_model_metrics.csv`, `prior1_continuous_auc_bootstrap.csv`, `prior1_preserved_current_HF_gradient.csv` |
-| Fig. 3B–C; Supplementary Tables S34–S35 | `Mortality_prediction/05` | `clinical_risk_recalibration/external_recalibration_summary.csv`, `external_recalibration_decile_data.csv` |
-| Fig. 4A–B; Supplementary Tables S36–S37; Supplementary Fig. 14 | `ADL/00`, `01` | `ADL_first_recorded/first_recorded_association.csv`, `first_recorded_prediction.csv`, `observation_flow.csv`, `observation_by_history.csv`, `observation_history_contrasts.csv` |
-| Fig. 4C; Supplementary Tables S38–S42; Supplementary Figs. 15–16 | `Dementia/00`, `01`, `02` | `dementia_bridge/event_dataset/`, `dementia_bridge/models/` |
-| Supplementary Table S1 | Provider and file metadata | this README and the cohort preparation scripts |
-
-Each modelling stage writes its coefficient tables and model-support results to the paths above. Participant-level files and runtime logs remain under the ignored `results/` directory.
 
 ## Licence
 
