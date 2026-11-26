@@ -1,0 +1,21 @@
+order,module,script,role,runner
+1,Track_A,scripts/Track_A/01_prepare_cohort_inputs.R,Read provider files and construct longitudinal records,run_track_A.R
+2,Track_A,scripts/Track_A/02_derive_and_harmonize_domains.R,Derive affective functional and cognition measures,run_track_A.R
+3,Track_A,scripts/Track_A/03_measurement_invariance.R,Fit measurement invariance models,run_track_A.R
+4,Track_A,scripts/Track_A/04_longitudinal_models.R,Fit cohort longitudinal models,run_track_A.R
+5,Track_A,scripts/Track_A/05_meta_analysis_and_robustness.R,Pool effects and fit longitudinal sensitivities,run_track_A.R
+6,Longitudinal_robustness,scripts/Longitudinal_robustness/01_freeze_and_audit.R,Check longitudinal inputs and sample counts,run_longitudinal_robustness.R
+7,Longitudinal_robustness,scripts/Longitudinal_robustness/02_longitudinal_robustness.R,Fit longitudinal covariance and lagged sensitivities,run_longitudinal_robustness.R
+8,Longitudinal_robustness,scripts/Longitudinal_robustness/04_lagged_and_sample_reconciliation.R,Fit interval-aware lagged and fixed-effect models,run_longitudinal_robustness.R
+9,Longitudinal_robustness,scripts/Longitudinal_robustness/05_within_between_synthesis.R,Estimate within-between effects and contrasts,run_longitudinal_robustness.R
+10,Mortality,scripts/Mortality/01_build_dynamic_candidate.R,Build prior-history and current-deviation mortality intervals,run_mortality_bridge.R
+11,Mortality,scripts/Mortality/02_fit_dynamic_models.R,Fit age-varying mortality models and pool contrasts,run_mortality_bridge.R
+12,Mortality_prediction,scripts/Mortality_prediction/01_build_age50_landmark_dataset.R,Construct five-year mortality landmarks,run_mortality_prediction.R
+13,Mortality_prediction,scripts/Mortality_prediction/02_fit_and_validate_five_year_models.R,Develop and evaluate five-year mortality models,run_mortality_prediction.R
+14,Mortality_prediction,scripts/Mortality_prediction/04_clinical_risk_prior1_continuous.R,Evaluate continuous history in ages 50 to 64,run_clinical_translation.R
+15,Mortality_prediction,scripts/Mortality_prediction/05_external_recalibration.R,Estimate intercept recalibration and performance,run_clinical_translation.R
+16,ADL,scripts/ADL/00_prepare_adl_inputs.R,Prepare five-item self-care observations and cohort cutpoints,run_adl.R
+17,ADL,scripts/ADL/01_build_first_recorded_adl_evidence.R,Fit ADL risk differences and evaluate discrimination,run_adl.R
+18,Dementia,scripts/Dementia/00_prepare_identifier_crosswalk.R,Link ELSA and SHARE provider identifiers,run_dementia_bridge.R
+19,Dementia,scripts/Dementia/01_build_event_dataset.R,Construct dementia detection and competing-death intervals,run_dementia_bridge.R
+20,Dementia,scripts/Dementia/02_fit_competing_event_models.R,Fit cause-specific and sensitivity models,run_dementia_bridge.R

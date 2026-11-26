@@ -1,0 +1,33 @@
+Recorded environment: exact dynamic mortality candidate construction
+R 4.4.2
+Platform: x86_64-w64-mingw32/x64
+
+Package versions present in the recorded session:
+data.table 1.18.4
+dplyr 1.2.1
+tidyr 1.3.2
+tidyselect 1.2.1
+purrr 1.0.4
+readr 2.2.0
+tibble 3.3.1
+nlme 3.1-168
+metafor 4.8-0
+survival 3.8-3
+
+
+Recorded environment: longitudinal and robustness analyses, 26 November 2026
+R 4.4.2
+data.table 1.18.6.1
+dplyr 1.2.1
+tidyr 1.3.2
+tidyselect 1.2.1
+purrr 1.0.4
+readr 2.2.0
+tibble 3.3.1
+haven 2.5.5
+nlme 3.1-168
+lavaan 0.6-19
+metafor 4.8-0
+fixest 0.14.2
+survival 3.8-11
+sandwich 3.1-1
